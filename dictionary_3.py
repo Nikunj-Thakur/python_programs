@@ -11,17 +11,21 @@ glossary = {
     'inheritance': 'A mechanism where a new class can inherit   attributes and methods from an existing class.',
 }
 
-print("Programming Glossary:")
-print(f"Variable:\n\t {glossary.get('variable', 'Sorry, definition not found.')}")
-print(f"Function:\n\t {glossary.get('function', 'Sorry, definition not found.')}")
-print(f"Loop:\n\t {glossary.get('loop', 'Sorry, definition not found.')}")
-print(f"Dictionary:\n\t {glossary.get('dictionary', 'Sorry, definition not found.')}")
-print(f"List:\n\t {glossary.get('list', 'Sorry, definition not found.')}")
-print(f"Tuple:\n\t {glossary.get('tuple', 'Sorry, definition not found.')}")
-print(f"Set:\n\t {glossary.get('set', 'Sorry, definition not found.')}")
-print(f"Class:\n\t {glossary.get('class', 'Sorry, definition not found.')}")
-print(f"Object:\n\t {glossary.get('object', 'Sorry, definition not found.')}")
-print(f"Inheritance:\n\t {glossary.get('inheritance', 'Sorry, definition not found.')}")
+# print("Programming Glossary:")
+# print(f"Variable:\n\t {glossary.get('variable', 'Sorry, definition not found.')}")
+# print(f"Function:\n\t {glossary.get('function', 'Sorry, definition not found.')}")
+# print(f"Loop:\n\t {glossary.get('loop', 'Sorry, definition not found.')}")
+# print(f"Dictionary:\n\t {glossary.get('dictionary', 'Sorry, definition not found.')}")
+# print(f"List:\n\t {glossary.get('list', 'Sorry, definition not found.')}")
+# print(f"Tuple:\n\t {glossary.get('tuple', 'Sorry, definition not found.')}")
+# print(f"Set:\n\t {glossary.get('set', 'Sorry, definition not found.')}")
+# print(f"Class:\n\t {glossary.get('class', 'Sorry, definition not found.')}")
+# print(f"Object:\n\t {glossary.get('object', 'Sorry, definition not found.')}")
+# print(f"Inheritance:\n\t {glossary.get('inheritance', 'Sorry, definition not found.')}")
 
-print(f"Pointers:\n\t {glossary.get('pointers', 'Sorry, definition not found.')}")
-print(f"Encapsulation:\n\t {glossary.get('encapsulation', 'Sorry, definition not found.')}")
+# print(f"Pointers:\n\t {glossary.get('pointers', 'Sorry, definition not found.')}")
+# print(f"Encapsulation:\n\t {glossary.get('encapsulation', 'Sorry, definition not found.')}")
+
+print("Programming Glossary:" + "\n" + "-"*20)
+for word, meaning in sorted(glossary.items()):
+    print(f"{word}\n\t: {meaning}")
