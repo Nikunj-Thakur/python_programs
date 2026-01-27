@@ -2,7 +2,7 @@ class Restaurant:
     def __init__(self, name, cuisine):
         self.name = name
         self.cuisine = cuisine
-        self.status = "Open"
+        #self.status = "Open"
 
     def describe_restaurant(self):
         print(f"The name of restaurant is {self.name}")
